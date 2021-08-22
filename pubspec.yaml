@@ -35,7 +35,6 @@ dependencies:
   stacked: ^2.2.3
   stacked_hooks: ^0.2.1
   stacked_services: ^0.8.13
-
 dev_dependencies:
   auto_route_generator: ^2.3.0
   build_runner: ^2.1.0
