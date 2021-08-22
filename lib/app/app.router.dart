@@ -11,8 +11,8 @@ import 'package:flutter/material.dart';
 import 'package:stacked/stacked.dart';
 import 'package:stacked/stacked_annotations.dart';
 
-import '../ui/second/second_view.dart';
-import '../ui/startup/startup_view.dart';
+import '../ui/views/second/second_view.dart';
+import '../ui/views/startup/startup_view.dart';
 
 class Routes {
   static const String startupView = '/';

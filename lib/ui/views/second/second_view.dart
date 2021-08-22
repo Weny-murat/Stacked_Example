@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:stacked/stacked.dart';
-import 'package:stacked_example/ui/second/second_viewmodel.dart';
+import 'package:stacked_example/ui/views/second/second_viewmodel.dart';
 
 class SecondView extends StatelessWidget {
   final String? name;
