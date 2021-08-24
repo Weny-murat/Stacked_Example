@@ -9,7 +9,7 @@ class FutureExampleViewModel extends FutureViewModel<String> {
 
   Future<String> getDataFromServer() async {
     await Future.delayed(const Duration(seconds: 3));
-    throw Exception('Bu Bozuk Kardeş!');
+    return 'Bu Bozuk Kardeş!';
   }
 
   @override
