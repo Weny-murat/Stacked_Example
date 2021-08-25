@@ -18,7 +18,7 @@ class DoubleIncreaseCounter extends StatelessWidget {
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: <Widget>[
-                    Text(
+                    const Text(
                       'Tap to double counter',
                       textAlign: TextAlign.center,
                     ),

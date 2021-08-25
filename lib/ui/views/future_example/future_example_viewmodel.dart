@@ -1,6 +1,3 @@
-import 'dart:ffi';
-import 'dart:html';
-
 import 'package:stacked/stacked.dart';
 
 class FutureExampleViewModel extends FutureViewModel<String> {
@@ -13,7 +10,6 @@ class FutureExampleViewModel extends FutureViewModel<String> {
   }
 
   @override
-  void onError(error){
-    
-  } 
+  void onError(error) {
+  }
 }

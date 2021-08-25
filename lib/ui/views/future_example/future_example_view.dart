@@ -11,11 +11,26 @@ class FutureExampleView extends StatelessWidget {
       builder: (context, model, child) {
         return Scaffold(
           body: Center(
-            child: model.isBusy ? const CircularProgressIndicator() : Text(model.data!),
+            child: model.isBusy
+                ? const CircularProgressIndicator()
+                : Column(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Text(model.data ?? 'NO DATA'),
+                      _ErrorMessage(),
+                    ],
+                  ),
           ),
         );
       },
       viewModelBuilder: () => FutureExampleViewModel(),
     );
+  }
+}
+
+class _ErrorMessage extends ViewModelWidget<FutureExampleViewModel> {
+  @override
+  Widget build(BuildContext context, FutureExampleViewModel viewModel) {
+    return Text(viewModel.error().toString());
   }
 }

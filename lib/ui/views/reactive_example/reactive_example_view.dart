@@ -11,9 +11,9 @@ class ReactiveExampleView extends StatelessWidget {
       body: Center(
         child: Row(
           children: <Widget>[
-            SingleIncreaseCounter(),
-            SizedBox(width: 50),
-            DoubleIncreaseCounter(),
+            const SingleIncreaseCounter(),
+            const SizedBox(width: 50),
+            const DoubleIncreaseCounter(),
           ],
         ),
       ),

@@ -6,6 +6,7 @@ class CounterService with ReactiveServiceMixin {
   CounterService() {
     listenToReactiveValues([_counter]);
   }
+  // ignore: prefer_final_fields
   ReactiveValue<int> _counter = ReactiveValue<int>(0);
   int get counter => _counter.value;
   void incrementCounter() {
